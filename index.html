@@ -11,29 +11,30 @@
     <main>
         <!-- START -->
         <section class="start">
-            <img src="./assets/Rectangle 9.svg" class="start__background"/>
-            <header class="start__header container">
-                <nav class="start__nav">
-                    <a href="#">Contact</a>
-                    <a href="#">About</a>
-                    <a href="#">Pricing</a>
-                    <a href="#">Product</a>
-                    <a href="#">Contact</a>
-                    <div>
-                    <a href="/"><img src="./assets/figmaland.svg"/></a>
-                 </div>
-                </nav>
-                <div class="start__soc">
-                    <img src="./assets/linkidin.svg"/>
-                    <img src="./assets/facebook.svg"/>
-                    <img src="./assets/twitter.svg"/>
+            <!-- <div class="start__background"> -->
+                <header class="start__header container">
+                    <nav class="start__nav">
+                        <a href="#">Contact</a>
+                        <a href="#">About</a>
+                        <a href="#">Pricing</a>
+                        <a href="#">Product</a>
+                        <a href="#">Contact</a>
+                        <div>
+                        <a href="/"><img src="./assets/figmaland.svg"/></a>
+                    </div>
+                    </nav>
+                    <div class="start__soc">
+                        <img src="./assets/linkidin.svg"/>
+                        <img src="./assets/facebook.svg"/>
+                        <img src="./assets/twitter.svg"/>
+                    </div>
+                </header>
+                <div class="start__info">
+                    <h2>The best products start with Figma</h2>
+                    <p>Most calendars are designed for teams. Slate is designed <br/> for freelancers</p>
+                    <button class="start__btn btn">Try for Free</button>
                 </div>
-            </header>
-            <div class="start__info">
-                <h2>The best products start with Figma</h2>
-                <p>Most calendars are designed for teams. Slate is designed <br/> for freelancers</p>
-                <button class="start__btn btn">Try for Free</button>
-            </div>
+            <!-- </div> -->
         </section>
         <!-- FEATURES -->
         <section class="features container">
@@ -71,16 +72,22 @@
                 <img src="assets/@ Macbook Pro.svg"/>
             </div>
         </section>
+        <!-- CTA -->
         <section class="CTA">
+            <div class="CTA__title-mobile">
+                <!--  -->
+            </div>
             <div>
                 <img src="assets/undraw_newsletter_vovu.svg"/>
             </div>
             <div class="CTA__title">
-                <h3>At your fingertips</h3>
-                <h2 class="h2">Lightning fast <br/>prototyping </h2>
+                <div>
+                    <h3>At your fingertips</h3>
+                    <h2 class="h2">Lightning fast <br/>prototyping </h2>
+                </div>
                 <h3>Subscribe to our Newsteller</h3>
                 <p>Available exclusivery on Figmaland</p>
-                <form>
+                <form class="CTA__form">
                     <input type="text" placeholder="Your Email" class="input"/>
                     <button class="btn">Subscribe</button>
                 </form>
@@ -105,23 +112,23 @@
                     <!-- <p>Microsoft</p> -->
                     <img src="assets/logos/Rectangle-1.svg"/>
                 </div>
-                <div>
+                <div class="hiddenlogo">
                     <!-- <p>Uber</p> -->
                     <img src="assets/logos/Rectangle-2.svg"/>
                 </div>
-                <div>
+                <div class="hiddenlogo"> 
                     <!-- <p>Dropbox</p> -->
                     <img src="assets/logos/Rectangle-3.svg"/>
-                </div>
-                <div>
+                </div class="hiddenlogo">
+                <div class="hiddenlogo">
                     <!-- <p>Google</p> -->
                     <img src="assets/logos/logos_google-1.svg"/>
-                </div>
-                <div>
+                </div class="hiddenlogo">
+                <div class="hiddenlogo">
                     <!-- <p>Uber</p> -->
                     <img src="assets/logos/Rectangle-4.svg"/>
-                </div>
-                <div>
+                </div >
+                <div class="hiddenlogo">
                     <!-- <p>Amazon</p> -->
                     <img src="assets/logos/Rectangle-5.svg"/>
                 </div>
@@ -132,12 +139,13 @@
         <section class="testimonials">
             <h2 class="h2">Testimonials</h2>
             <img src="assets/Vector.svg"/>
-            <p class="pText">Most calendars are designed for teams. Slate is designed for freelancers 
-            </br>who want a simple way to plan their schedule.</p>
+            <p class="pText"><span class="testimonials__text">Most calendars are designed for teams. Slate is designed for freelancers 
+            who want a simple way to plan their schedule.</span></p>
             <div class="testimonials__person">
-                <img src="assets/Ellipse 2.svg"/>
+                <img src="assets/Ellipse 2.svg" class="testimonials__person-man"/>
+                <img src="assets/acrossdesigner.svg" class="testimonials__person-woman"/>
                 <div>
-                    <p>Organize across</p>
+                    <p><b>Organize across</b></p>
                     <p>Ui designer</p>
                 </div>
             </div>
@@ -243,7 +251,7 @@
                             <p>willie.jennings@example.com</p>
                         </div>
                     </div>
-                    <img src="assets/contact/map.svg"/>
+                    <img src="assets/contact/map.svg" class="contact__mapImg"/>
                     <div class="contact__soc">
                         <img src="assets/contact/twitter.svg"/>
                         <img src="assets/contact/facebook.svg"/>
